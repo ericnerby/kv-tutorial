@@ -24,7 +24,7 @@ defmodule KV.Registry do
   """
   def create(server, name) do
     GenServer.cast(server, {:create, name})
-  endr
+  end
 
   ## Defining GenServer Calbacks
 
