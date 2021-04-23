@@ -15,7 +15,7 @@ defmodule KV.Registry do
 
 
   @impl true
-  def handle_cal({:lookup, name}, _from, names) do
+  def handle_call({:lookup, name}, _from, names) do
     {:reply, Map.fetch(names, name), names}
   end
 
